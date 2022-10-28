@@ -1,0 +1,179 @@
+
+
+body{
+    display: grid;
+    grid-template-areas: "header header header header"
+                         "mockup mockup description description"
+                         "mockup mockup description description"
+                         "mockup mockup description description"
+                         "footer footer footer footer";
+    background: url(./images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    grid-template-columns: repeat(4, 1fr);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;}
+
+    @media (max-width:375px){
+        body{
+            grid-template-areas: "header"
+                                 "mockup"
+                                 "description"
+                                 "footer";
+            grid-template-columns: repeat(4, 1fr);
+            background:url(./images/bg-mobile.svg);
+            background-color: hsl(257, 40%, 49%);
+        }
+    }
+
+    /*HEADER*/
+    
+    .header{
+        grid-area: header;
+    }
+
+    .header h1{
+        margin-top: 30px;
+        margin-left: 110px;
+        color: white;
+        font-family: 'Poppins';
+    }
+
+    @media (max-width:375px){
+
+        .header{
+            grid-area: header;
+        }
+
+        .header h1{
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+    }
+
+
+
+    /*MOCKUP*/
+    
+    .mockup{
+        grid-area: mockup;
+        margin-left: 70px;
+        margin-top: 65px;
+    }
+
+    @media(max-width:375px){
+
+
+        .mockup{
+            grid-area: mockup;
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+        .mockup img{
+            height: 220px;
+        }
+    }
+ 
+
+    /*DESCRIPTION*/
+
+    .description{
+        grid-area: description;
+        width: 470px;
+        margin-left: 170px;
+        margin-top: 120px;
+    }
+
+    .description h2{
+        color: white;
+        line-height: 20px;
+        font-size: 30px;
+        font-weight: 600;
+        }
+
+    .description p {
+        color: white;
+        font-size: 15px;
+        line-height: 22px;
+        padding-top: 20px;
+        padding-bottom:15px ;
+    }
+
+
+
+    .description .btn a{
+    text-decoration: none;
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    margin-top:50px;
+    padding: 10px 50px 10px 50px;
+    border-radius: 30px;
+    }
+
+    .description .social {
+        margin-top: 230px;
+        margin-left: 340px;
+    }
+
+    .description .social a{
+        color: white;
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    @media (max-width:375px){
+        .description{
+            grid-area: description;
+            width: 320px;
+            margin-left: 20px;
+            margin-top: 50px;
+            }
+        
+        .description h2{
+            text-align: center;
+            
+        }
+    
+        .description p{
+            text-align:center;
+            margin-left: 30px;
+            width: 280px;
+        }
+    
+        .description .btn {
+            margin-left: 80px;
+        }
+        
+        .description .social{
+            margin-top: 70px;
+            margin-left: 100px;
+            align-items: center;
+        }
+
+    }
+
+
+
+    /*FOOTER*/
+
+   .footer{
+        grid-area: footer;
+        color: white;     
+    }
+
+    .footer .attribution 
+    { font-size: 12px; 
+    text-align: center; 
+}
+   
+   
+    .footer .attribution a 
+    { color: white;
+    
+    }
+
+    @media(max-width:375px){
+
+        .footer{
+            grid-area: footer;
+        }
+    }
