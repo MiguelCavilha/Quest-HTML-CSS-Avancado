@@ -145,6 +145,79 @@
 
 }
 
+@media (max-width:420px){
+   
+    body{
+        grid-template-areas: "header"
+                             "mockup"
+                             "description"
+                             "footer";
+        grid-template-columns: repeat(4, 1fr);
+        background:url(./images/bg-mobile.svg) no-repeat;
+        background-color: hsl(257, 40%, 49%);
+    }
+
+    /*HEADER*/
+  
+    .header{
+        grid-area: header;
+    }
+
+    .header h1{
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    /*MOCKUP*/
+
+     .mockup{
+            grid-area: mockup;
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+        .mockup img{
+            height: 250px;
+            width: 320px;
+        }
+    
+        /*DESCRIPTION*/
+
+        .description{
+            grid-area: description;
+            width: 300px;
+            margin-left: 20px;
+            margin-top: 50px;
+            }
+        
+        .description h2{
+            margin-left: 90px;
+            
+        }
+    
+        .description p{
+            text-align:center;
+            margin-left: 25px;
+            width: 280px;
+        }
+    
+        .description .btn {
+            margin-left: 90px;
+        }
+        
+        .description .social{
+            margin-top: 70px;
+            margin-left: 110px;
+            align-items: center;
+        }
+    
+    
+
+        /*FOOTER*/
+
+        .footer{
+            grid-area: footer;
+        }}
+
 
 
 @media (max-width:375px){
